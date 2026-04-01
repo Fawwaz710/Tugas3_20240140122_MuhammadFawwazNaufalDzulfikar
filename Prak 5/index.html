@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h2>Pendaftaran Peminatan</h2>
+
+      <form>
+        <label>Nama</label>
+        <input type="text" id="namaKucing" placeholder="Nama anda">
+
+        <label>NIM</label>
+        <input type="text" id="jenisKucing" placeholder="NIM anda">
+
+        <label>Angkatan</label>
+        <select id="angkatan">
+          <option value="">-- Pilih Angkatan --</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+        </select>
+
+        <p>Peminatan pada bidang:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="warna" value="Programming"> Programming</label>
+          <label><input type="radio" name="warna" value="Desain"> Desain</label>
+          <label><input type="radio" name="warna" value="Jaringan"> Jaringan</label>
+          <label><input type="radio" name="warna" value="Data"> Data</label>
+        </div>
+
+        <label>Tanggal</label>
+        <input type="date" id="tanggalLahir">
+
+        <label>Alamat</label>
+        <textarea id="deskripsi" placeholder="Tulis alamatmu di sini"></textarea>
+
+        <button type="submit" onclick="kirimData()">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
